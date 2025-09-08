@@ -1,0 +1,161 @@
+.gallery {
+  background-color: #f1f8ff;
+  padding: 80px 0;
+}
+
+.gallery-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #e3f2fd;
+  color: #1a73e8;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #1a73e8;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: white;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item-info {
+  padding: 20px;
+}
+
+.gallery-item-info h3 {
+  color: #1a73e8;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.project-status {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-status.ongoing {
+  color: #ff9800;
+}
+
+.project-status.completed {
+  color: #4caf50;
+}
+
+.project-id {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-btn {
+  padding: 10px 18px;
+  border: 2px solid #1a73e8;
+  background: white;
+  color: #1a73e8;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #1a73e8;
+  color: white;
+}
+
+.pagination-btn.active {
+  background: #1a73e8;
+  color: white;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gallery-stats {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 200px;
+  }
+  
+  .pagination {
+    flex-direction: column;
+  }
+  
+  .pagination-numbers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

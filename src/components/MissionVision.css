@@ -1,0 +1,39 @@
+.mission-vision {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.mv-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mv-card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.mv-icon {
+  font-size: 3rem;
+  color: #ff7b00;
+  margin-bottom: 20px;
+}
+
+.mv-card h3 {
+  color: #1a73e8;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.mv-card p {
+  color: #666;
+  line-height: 1.6;
+}
