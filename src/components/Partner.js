@@ -16,7 +16,7 @@ const Partner = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="/images/grainger-logo.png"
+              src="images/Grainger.jpg"
               alt="Grainger USA Logo"
               className="partner-logo-img"
             />
